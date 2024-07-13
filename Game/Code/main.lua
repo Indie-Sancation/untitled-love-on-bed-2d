@@ -21,8 +21,7 @@ end
 
 function love.update(dt)
 
- 
---25 million
+
 
 end
 
@@ -32,11 +31,27 @@ function love.draw()
     love.graphics.setColor(1,0,0)
     love.graphics.circle("fill", target.x, target.y, target.radius)
 
-
-
-    
     love.graphics.setFont(gamefontsize)
     love.graphics.setColor(1,1,1)
     love.graphics.print("FPS: "..tostring(love.timer.getFPS( )), 10, 10) 
     love.graphics.print("Score:"..tostring(score), 10, 27)
+end
+
+function love.mousepressed( x, y, button, istouch, presses )
+
+    if button == 1 then
+        local mouseToTarget =distanceBetween(x, y, target.x,target.y)
+        if mouseToTarget < target.radius then
+            score = score + 1
+            target.x = math.random(target.radius, love.graphics.getWidth() - target.radius)
+            target.y = math.random(target.radius, love.graphics.getHeight() - target.radius)
+        end
+    end
+end
+
+
+
+
+function distanceBetween(x1, y1, x2, y2)
+   return math.sqrt( (x2-x1)^2 + (y2-y1)^2 )
 end
