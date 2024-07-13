@@ -21,5 +21,9 @@ function love.draw()
     love.graphics.circle("fill",100, 400, 100)
     love.graphics.setColor(11/255, 111/255, 255/255)
     love.graphics.rectangle("fill", 200, 200, 100, 100)
+    
+
+
+    love.graphics.print("FPS: "..tostring(love.timer.getFPS( )), 10, 10)
 
 end
