@@ -24,6 +24,9 @@ function love.draw()
     
 
 
-    love.graphics.print("FPS: "..tostring(love.timer.getFPS( )), 10, 10)
+    love.graphics.print("FPS: "..tostring(love.timer.getFPS( )), 10, 10) 
 
+    #this is a message
+    //this is a message
+    *this is a message
 end
