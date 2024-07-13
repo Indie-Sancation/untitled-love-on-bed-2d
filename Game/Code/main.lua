@@ -30,4 +30,5 @@ function love.draw()
     --How git hub
     --fuck you
     --urmom is gyatttt!
+    -- :|
 end
