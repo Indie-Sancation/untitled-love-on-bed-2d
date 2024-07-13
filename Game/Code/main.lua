@@ -26,7 +26,6 @@ function love.draw()
 
     love.graphics.print("FPS: "..tostring(love.timer.getFPS( )), 10, 10) 
 
-    #this is a message
-    //this is a message
-    *this is a message
+
+    --How git hub
 end
