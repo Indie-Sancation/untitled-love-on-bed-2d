@@ -25,3 +25,4 @@ function love.draw()
 
     love.graphics.print("FPS: "..tostring(love.timer.getFPS( )), 10, 10) 
 end
+-- this dumbass doesnt know how to push
