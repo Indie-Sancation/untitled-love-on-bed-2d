@@ -1,4 +1,3 @@
-Making a 2d game with Love2D PL
+Making a 2d game with Love2D
 
 
-# Member: Me, Dari
